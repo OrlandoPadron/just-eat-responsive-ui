@@ -1,3 +1,254 @@
-.test {
-	background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* VARIABLES */
+:root {
+	--main-orange: #ff8000;
+	--purple: #5b3d5b;
+	--palid-purple: #d1cadf;
+	--alt-orange: #ff5c00;
+	--palid-orange: #ff5c00;
+	--pink: #ffbebe;
+	--cream: #ffe5cd;
+	--yellow: #ffc700;
+	--gray: #ebebeb;
+	--green: #017a39;
+
+	--text-low-opacity: #242e30;
+}
+.bg--main-orange {
+	background-color: var(--main-orange);
+}
+.bg--purple {
+	background-color: var(--purple);
+}
+
+.bg--palid-purple {
+	background-color: var(--palid-purple);
+}
+.bg--alt-orange {
+	background-color: var(--alt-orange);
+}
+.bg--palid-orange {
+	background-color: var(--palid-orange);
+}
+.bg--pink {
+	background-color: var(--pink);
+}
+.bg--cream {
+	background-color: var(--cream);
+}
+.bg--yellow {
+	background-color: var(--yellow);
+}
+
+.text--bold {
+	font-weight: bold;
+}
+
+.text--green {
+	color: var(--green);
+}
+/* END VARIABLES */
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: var(--text-low-opacity);
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 0 30px;
+	height: calc(100vh - 115px);
+}
+main > :first-child {
+	margin-top: -30px;
+	margin-bottom: 30px;
+}
+
+nav {
+	display: grid;
+	grid-template-areas: 'hamburger logo options';
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-content: space-around;
+	height: 100px;
+	padding-bottom: 15px;
+	background-color: var(--main-orange);
+}
+
+.user-options__container {
+	grid-area: hamburger;
+}
+
+.user-options__container img {
+	margin-top: 3px;
+}
+
+.filter-options__container {
+	grid-area: options;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+#image-logo {
+	grid-area: logo;
+	margin-top: -8px;
+	margin-right: -18px;
+}
+
+#bars-icon {
+	margin-top: 4px;
+}
+
+.search-bar {
+	display: flex;
+	width: 100%;
+	padding: 20px 25px;
+	border-radius: 50px;
+	gap: 14px;
+	box-sizing: border-box;
+	background-color: white;
+}
+.search-bar__input {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.15);
+}
+
+.promotion__container {
+	display: flex;
+	width: 100%;
+	flex-shrink: 0;
+	overflow-x: auto;
+	padding-bottom: 15px;
+	gap: 22px;
+}
+
+.promotion__element {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	gap: 10px;
+}
+.promotion__element img {
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.address__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	gap: 25px;
+	background-color: var(--gray);
+	padding: 20px 25px;
+	border-radius: 50px;
+	margin-top: 15px;
+}
+span.address {
+	display: flex;
+	flex-direction: column;
+	color: inherit;
+}
+
+a.address__href {
+	font-size: 1rem;
+	flex-shrink: 3;
+}
+a.address__href:link,
+a.address__href:visited,
+a.address__href:hover,
+a.address__href:active {
+	color: var(--text-low-opacity);
+}
+
+.restaurants__container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 40px;
+	margin-top: 30px;
+	padding-bottom: 80px;
+}
+
+.restaurants-open__container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: -20px;
+}
+
+.restaurant__element {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 20px;
+}
+
+.restaurant__img-container {
+	position: relative;
+	border-radius: 12px;
+	height: 144px;
+}
+img.restaurant__logo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	top: 20px;
+	left: 20px;
+	border-radius: 5px;
+	background-color: white;
+	padding: 2px;
+}
+
+.restaurant__info-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+h1.restaurant__title {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--text-low-opacity);
+}
+
+.restaurant__details {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.restaurant-score__container {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+.restaurant-score__container > :last-child {
+	margin-left: 10px;
+}
+
+.restaurant-deliver__container {
+	display: flex;
+	align-items: center;
+	gap: 8px 15px;
+	flex-wrap: wrap;
+}
+
+.restaurant-deliver__container > :first-child {
+	flex-basis: 100%;
 }

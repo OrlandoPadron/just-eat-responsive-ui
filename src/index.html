@@ -8,6 +8,170 @@
 		<title>Just Eat UI Practice</title>
 	</head>
 	<body>
-		<h1>Hello world</h1>
+		<nav>
+			<img id="image-logo" src="assets/misc/logo-white.svg" alt="logo" />
+			<div class="user-options__container">
+				<img src="assets/icons/hambuger.svg" alt="hamburger-menu-icon" />
+			</div>
+			<div class="filter-options__container">
+				<img src="assets/icons/filter.svg" alt="filter-icon" />
+				<img id="bars-icon" src="assets/icons/bars.svg" alt="bars-icon" />
+			</div>
+		</nav>
+		<main>
+			<div class="search-bar shadow">
+				<img class="search-bar__icon" src="assets/icons/search-icon.svg" alt="search-icon" />
+				<input type="text" class="search-bar__input" placeholder="Buscar restaurante o cocina" />
+			</div>
+			<div class="promotion__container">
+				<div class="promotion__element">
+					<img class="bg--main-orange" src="assets/promotions/marcas-con-promocion.webp" alt="promo-image" />
+					<span class="promotion__text">Promo marcas</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--purple" src="assets/promotions/alimentacion.webp" alt="nutrition-image" />
+					<span class="promotion__text">Alimentación</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--alt-orange" src="assets/promotions/alta-cocina.webp" alt="gourmet-image" />
+					<span class="promotion__text">Alta cocina</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--pink" src="assets/promotions/poke.webp" alt="poke-image" />
+					<span class="promotion__text">Poké</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--palid-orange" src="assets/promotions/sushi.webp" alt="sushi-image" />
+					<span class="promotion__text">Sushi</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--palid-purple" src="assets/promotions/japonesa.webp" alt="sushi-image" />
+					<span class="promotion__text">Japonesa</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--cream" src="assets/promotions/mexicana.png" alt="mexican-image" />
+					<span class="promotion__text">Mexicana</span>
+				</div>
+				<div class="promotion__element">
+					<img class="bg--yellow" src="assets/promotions/sin-gluten.webp" alt="gluten-free-image" />
+					<span class="promotion__text">Sin gluten</span>
+				</div>
+			</div>
+			<div class="address__container">
+				<img src="assets/icons/map-icon.svg" alt="address-icon" class="address__icon" />
+				<span class="address">Calle Prueba, 35019 <span>Las Palmas de Gran Canaria</span></span>
+				<a href="" class="address__href">cambiar dirección</a>
+			</div>
+			<div class="restaurants__container">
+				<span class="restaurants-open__container">
+					<img src="assets/icons/info.svg" alt="info-icon" />
+					<span class="restaurants-open__text"> 193 restaurantes abiertos </span>
+				</span>
+				<div class="restaurant__element">
+					<div
+						class="restaurant__img-container"
+						style="background-image: url('assets/restaurants/sushi_ichiban/background.webp')"
+					>
+						<img
+							src="assets/restaurants/sushi_ichiban/logo.gif"
+							alt="sushi-ichiban-logo"
+							class="restaurant__logo"
+						/>
+					</div>
+					<section class="restaurant__info-container">
+						<h1 class="restaurant__title">Sushi Ichiban</h1>
+						<div class="restaurant__details">
+							<div class="restaurant-score__container">
+								<img src="assets/icons/star.svg" alt="start-icon" />
+								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span>(191)</span>
+								<span>Japonesa · Sushi</span>
+							</div>
+							<div class="restaurant-deliver__container">
+								<span class="text--green text--bold">35 - 50 min.</span>
+								<span>Entrega GRATIS</span>
+								<span>Pedido mínimo 12€</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="restaurant__element">
+					<div
+						class="restaurant__img-container"
+						style="background-image: url('assets/restaurants/oh_que_bueno/background.jpg')"
+					>
+						<img
+							src="assets/restaurants/oh_que_bueno/logo.gif"
+							alt="oh-que-bueno-logo"
+							class="restaurant__logo"
+						/>
+					</div>
+					<section class="restaurant__info-container">
+						<h1 class="restaurant__title">Oh! Qué bueno</h1>
+						<div class="restaurant__details">
+							<div class="restaurant-score__container">
+								<img src="assets/icons/star.svg" alt="start-icon" />
+								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span>(371)</span>
+								<span>Hamburguesas · Venezolana</span>
+							</div>
+							<div class="restaurant-deliver__container">
+								<span class="text--green text--bold">40 - 55 min.</span>
+								<span>Entrega desde 2.65€</span>
+								<span>Sin pedido mínimo</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="restaurant__element">
+					<div
+						class="restaurant__img-container"
+						style="background-image: url('assets/restaurants/coki/background.webp')"
+					>
+						<img src="assets/restaurants/coki/logo.gif" alt="coki-logo" class="restaurant__logo" />
+					</div>
+					<section class="restaurant__info-container">
+						<h1 class="restaurant__title">Cokí Mesa y López</h1>
+						<div class="restaurant__details">
+							<div class="restaurant-score__container">
+								<img src="assets/icons/star.svg" alt="start-icon" />
+								<span class="restaurant-score__score"><span class="text--bold">5.30</span>/6</span>
+								<span>(131)</span>
+								<span>Sana · Sin gluten</span>
+							</div>
+							<div class="restaurant-deliver__container">
+								<span class="text--green text--bold">35 - 50 min.</span>
+								<span>Entrega GRATIS</span>
+								<span>Sin pedido mínimo</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="restaurant__element">
+					<div
+						class="restaurant__img-container"
+						style="background-image: url('assets/restaurants/subway/background.jpg')"
+					>
+						<img src="assets/restaurants/subway/logo.gif" alt="subway-logo" class="restaurant__logo" />
+					</div>
+					<section class="restaurant__info-container">
+						<h1 class="restaurant__title">Subway</h1>
+						<div class="restaurant__details">
+							<div class="restaurant-score__container">
+								<img src="assets/icons/star.svg" alt="start-icon" />
+								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span>(191)</span>
+								<span>Americana · Sandwiches</span>
+							</div>
+							<div class="restaurant-deliver__container">
+								<span class="text--green text--bold">35 - 50 min.</span>
+								<span>Entrega GRATIS</span>
+								<span>Sin pedido mínimo</span>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
