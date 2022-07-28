@@ -235,7 +235,7 @@ h1.restaurant__title {
 
 .restaurant-score__container {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 8px;
 }
 .restaurant-score__container > :last-child {
