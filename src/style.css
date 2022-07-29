@@ -13,6 +13,8 @@
 	--green: #017a39;
 
 	--text-low-opacity: #242e30;
+
+	--underline-offset: 3px;
 }
 /* END VARIABLES */
 a:link,
@@ -20,11 +22,11 @@ a:visited,
 a:active {
 	color: var(--text-low-opacity);
 	text-decoration: none;
-	text-underline-offset: 3px;
+	text-underline-offset: var(--underline-offset);
 }
 a:hover {
 	text-decoration: underline;
-	text-underline-offset: 3px;
+	text-underline-offset: var(--underline-offset);
 }
 
 .bg--main-orange {
@@ -63,6 +65,35 @@ a:hover {
 
 .mobile-hidden {
 	display: none;
+}
+
+.hover-effect--pointer {
+	cursor: pointer;
+}
+
+.hover-effect--tick:hover {
+	cursor: pointer;
+}
+
+.hover-effect-tick__element {
+	display: flex;
+	align-items: center;
+}
+.hover-effect--tick > .hover-effect-tick__element::before {
+	content: '';
+	opacity: 0;
+	width: 0;
+	transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, margin-right 0.2s ease-in-out;
+}
+.hover-effect--tick:hover > .hover-effect-tick__element::before {
+	content: '';
+	background-image: url('assets/icons/check-category-icon.svg');
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-right: 8px;
+	opacity: 1;
+	height: 15px;
+	width: 15px;
 }
 
 body {
@@ -354,7 +385,7 @@ h1.restaurant__title {
 
 	.promotion__element img {
 		width: 100%;
-		height: auto;
+		height: 100%;
 		object-fit: cover;
 	}
 
@@ -391,10 +422,16 @@ h1.restaurant__title {
 		align-items: flex-start;
 	}
 
+	.restaurant__element:hover > .restaurant__info-container > .restaurant__title {
+		text-decoration: underline;
+		text-underline-offset: var(--underline-offset);
+		text-decoration-thickness: 2px;
+	}
+
 	.restaurant__img-container {
 		min-width: 320px;
-		width: 420px;
-		height: 180px;
+		flex-shrink: 0;
+		height: 160px;
 	}
 
 	.restaurant__info-container {
@@ -441,28 +478,5 @@ h1.restaurant__title {
 		justify-content: space-between;
 		border-radius: 30px;
 		font-weight: 600;
-	}
-	.category__element:hover {
-		cursor: pointer;
-	}
-	.category-element__text {
-		display: flex;
-		align-items: center;
-	}
-	.category__element > .category-element__text::before {
-		content: '';
-		opacity: 0;
-		width: 0;
-		transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, margin-right 0.2s ease-in-out;
-	}
-	.category__element:hover > .category-element__text::before {
-		content: '';
-		background-image: url('assets/icons/check-category-icon.svg');
-		background-size: 100% 100%;
-		display: inline-block;
-		margin-right: 8px;
-		opacity: 1;
-		height: 15px;
-		width: 15px;
 	}
 }
