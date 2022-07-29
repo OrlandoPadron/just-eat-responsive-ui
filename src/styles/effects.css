@@ -1,0 +1,39 @@
+/*
+	CSS file with custom generic effects
+*/
+
+.hover-effect--pointer {
+	cursor: pointer;
+}
+
+.hover-effect--tick:hover {
+	cursor: pointer;
+}
+
+.hover-effect-tick__element {
+	display: flex;
+	align-items: center;
+}
+
+.hover-effect--tick > .hover-effect-tick__element::before {
+	content: '';
+	opacity: 0;
+	width: 0;
+	transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, margin-right 0.2s ease-in-out;
+}
+
+.hover-effect--tick:hover > .hover-effect-tick__element::before {
+	content: '';
+	background-image: url('/src/assets/icons/check-category-icon.svg');
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-right: 8px;
+	opacity: 1;
+	height: 15px;
+	width: 15px;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 3px 9px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 9px 1px rgba(0, 0, 0, 0.1);
+}

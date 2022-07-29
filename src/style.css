@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-/* VARIABLES */
-:root {
-	--main-orange: #ff8000;
-	--purple: #5b3d5b;
-	--palid-purple: #d1cadf;
-	--alt-orange: #ff5c00;
-	--palid-orange: #ff5c00;
-	--pink: #ffbebe;
-	--cream: #ffe5cd;
-	--yellow: #ffc700;
-	--gray: #ebebeb;
-	--green: #017a39;
+@import url('/src/styles/variables.css');
+@import url('/src/styles/utilities.css');
+@import url('/src/styles/effects.css');
 
-	--text-low-opacity: #242e30;
+/*
+	Page designed following a mobile first approach 
+*/
 
-	--underline-offset: 3px;
-}
-/* END VARIABLES */
 a:link,
 a:visited,
 a:active {
@@ -29,77 +19,14 @@ a:hover {
 	text-underline-offset: var(--underline-offset);
 }
 
-.bg--main-orange {
-	background-color: var(--main-orange);
-}
-.bg--purple {
-	background-color: var(--purple);
-}
-
-.bg--palid-purple {
-	background-color: var(--palid-purple);
-}
-.bg--alt-orange {
-	background-color: var(--alt-orange);
-}
-.bg--palid-orange {
-	background-color: var(--palid-orange);
-}
-.bg--pink {
-	background-color: var(--pink);
-}
-.bg--cream {
-	background-color: var(--cream);
-}
-.bg--yellow {
-	background-color: var(--yellow);
-}
-
-.text--bold {
-	font-weight: bold;
-}
-
-.text--green {
-	color: var(--green);
-}
-
-.mobile-hidden {
-	display: none;
-}
-
-.hover-effect--pointer {
-	cursor: pointer;
-}
-
-.hover-effect--tick:hover {
-	cursor: pointer;
-}
-
-.hover-effect-tick__element {
-	display: flex;
-	align-items: center;
-}
-.hover-effect--tick > .hover-effect-tick__element::before {
-	content: '';
-	opacity: 0;
-	width: 0;
-	transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, margin-right 0.2s ease-in-out;
-}
-.hover-effect--tick:hover > .hover-effect-tick__element::before {
-	content: '';
-	background-image: url('assets/icons/check-category-icon.svg');
-	background-size: 100% 100%;
-	display: inline-block;
-	margin-right: 8px;
-	opacity: 1;
-	height: 15px;
-	width: 15px;
-}
-
 body {
 	font-family: 'Lato', sans-serif;
 	color: var(--text-low-opacity);
 	margin: 0;
+}
+
+.mobile-hidden {
+	display: none;
 }
 
 main {
@@ -162,11 +89,6 @@ nav {
 	background-color: transparent;
 	outline: none;
 	border: none;
-}
-
-.shadow {
-	-webkit-box-shadow: 0px 3px 9px 1px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 3px 9px 1px rgba(0, 0, 0, 0.1);
 }
 
 .promotion__container {
@@ -445,7 +367,7 @@ h1.restaurant__title {
 
 	.restaurant-deliver__container > span:first-of-type::before {
 		content: '';
-		background: url('assets/icons/clock-icon.svg');
+		background: url('/src/assets/icons/clock-icon.svg');
 		background-size: 100% 100%;
 		display: inline-block;
 		height: 20px;

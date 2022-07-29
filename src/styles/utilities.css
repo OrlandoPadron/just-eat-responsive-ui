@@ -1,0 +1,37 @@
+/*
+	Minimal utility CSS classes. 
+*/
+
+.bg--main-orange {
+	background-color: var(--main-orange);
+}
+.bg--purple {
+	background-color: var(--purple);
+}
+
+.bg--palid-purple {
+	background-color: var(--palid-purple);
+}
+.bg--alt-orange {
+	background-color: var(--alt-orange);
+}
+.bg--palid-orange {
+	background-color: var(--palid-orange);
+}
+.bg--pink {
+	background-color: var(--pink);
+}
+.bg--cream {
+	background-color: var(--cream);
+}
+.bg--yellow {
+	background-color: var(--yellow);
+}
+
+.text--bold {
+	font-weight: bold;
+}
+
+.text--green {
+	color: var(--green);
+}

@@ -1,0 +1,17 @@
+/* Global CSS variables */
+:root {
+	--main-orange: #ff8000;
+	--purple: #5b3d5b;
+	--palid-purple: #d1cadf;
+	--alt-orange: #ff5c00;
+	--palid-orange: #ff5c00;
+	--pink: #ffbebe;
+	--cream: #ffe5cd;
+	--yellow: #ffc700;
+	--gray: #ebebeb;
+	--green: #017a39;
+
+	--text-low-opacity: #242e30;
+
+	--underline-offset: 3px;
+}
