@@ -9,11 +9,19 @@
 	</head>
 	<body>
 		<nav>
-			<img id="image-logo" src="assets/misc/logo-white.svg" alt="logo" />
+			<picture>
+				<source media="(min-width: 1200px)" srcset="assets/misc/logo-orange.svg" />
+				<img id="image-logo" src="assets/misc/logo-white.svg" alt="logo" />
+			</picture>
 			<div class="user-options__container">
-				<img src="assets/icons/hambuger.svg" alt="hamburger-menu-icon" />
+				<img class="desktop-hidden" src="assets/icons/hambuger.svg" alt="hamburger-menu-icon" />
+				<span class="user-options__user-name mobile-hidden">
+					<img src="assets/icons/user-icon.svg" alt="user-icon" />
+					<a href="">Pedro</a>
+				</span>
+				<a href="" class="mobile-hidden">Ayuda</a>
 			</div>
-			<div class="filter-options__container">
+			<div class="filter-options__container desktop-hidden">
 				<img src="assets/icons/filter.svg" alt="filter-icon" />
 				<img id="bars-icon" src="assets/icons/bars.svg" alt="bars-icon" />
 			</div>
@@ -59,8 +67,10 @@
 			</div>
 			<div class="address__container">
 				<img src="assets/icons/map-icon.svg" alt="address-icon" class="address__icon" />
-				<span class="address">Calle Prueba, 35019 <span>Las Palmas de Gran Canaria</span></span>
-				<a href="" class="address__href">cambiar dirección</a>
+				<div class="address-text__container">
+					<span class="address">Calle Prueba, 35019, Las Palmas de Gran Canaria</span></span>
+					<a href="" class="address__href">cambiar dirección</a>
+				</div>
 			</div>
 			<div class="restaurants__container">
 				<span class="restaurants-open__container">
@@ -170,6 +180,56 @@
 							</div>
 						</div>
 					</section>
+				</div>
+			</div>
+			<div class="categories__container mobile-hidden">
+				<span class="category-head__container">
+					<img src="assets/icons/category-hexagon.svg" alt="category-icon" />
+					<h3>Categorías A-Z</h3>
+				</span>
+				<div class="category__element shadow">
+					<span class="category-element__text">Africana</span>
+					<span>1</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Alimentación</span>
+					<span>3</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Alta cocina</span>
+					<span>5</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Americana</span>
+					<span>45</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Andaluza</span>
+					<span>1</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Árabe</span>
+					<span>3</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Argentina</span>
+					<span>8</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">BBQ</span>
+					<span>2</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Bocadillos/Wraps</span>
+					<span>8</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">Casera</span>
+					<span>29</span>
+				</div>
+				<div class="category__element shadow">
+					<span class="category-element__text">China</span>
+					<span>12</span>
 				</div>
 			</div>
 		</main>
