@@ -108,9 +108,13 @@ nav {
 }
 .promotion__element img {
 	width: 150px;
-	height: 100px;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 15px;
+}
+
+.promotion__element span {
+	white-space: nowrap;
 }
 
 .address__container {
