@@ -5,83 +5,86 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Just Eat UI Practice</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css" />
-		
 	</head>
 	<body>
-		<nav>
-			<picture>
+		<nav class="navbar">
+			<picture class="navbar__logo">
 				<source media="(min-width: 1200px)" srcset="assets/misc/logo-orange.svg" />
-				<img id="image-logo" src="assets/misc/logo-white.svg" alt="logo" />
+				<img src="assets/misc/logo-white.svg" alt="logo" />
 			</picture>
-			<div class="user-options__container">
-				<img class="desktop-hidden" src="assets/icons/hambuger.svg" alt="hamburger-menu-icon" />
+			<div class="user-options">
+				<img
+					class="user-options__icon desktop-hidden"
+					src="assets/icons/hambuger.svg"
+					alt="hamburger-menu-icon"
+				/>
 				<span class="user-options__user-name mobile-hidden">
-					<img src="assets/icons/user-icon.svg" alt="user-icon" />
+					<img class="user-options__user-icon" src="assets/icons/user-icon.svg" alt="user-icon" />
 					<a href="">Pedro</a>
 				</span>
 				<a href="" class="mobile-hidden">Ayuda</a>
 			</div>
-			<div class="filter-options__container desktop-hidden">
+			<div class="filter-options desktop-hidden">
 				<img src="assets/icons/filter.svg" alt="filter-icon" />
-				<img id="bars-icon" src="assets/icons/bars.svg" alt="bars-icon" />
+				<img class="filter-options__bars-icon" src="assets/icons/bars.svg" alt="bars-icon" />
 			</div>
 		</nav>
-		<main>
+		<main class="main-content">
 			<div class="search-bar shadow">
 				<img class="search-bar__icon" src="assets/icons/search-icon.svg" alt="search-icon" />
 				<input type="text" class="search-bar__input" placeholder="Buscar restaurante o cocina" />
 			</div>
-			<div class="promotion__container">
-				<div class="promotion__element hover-effect--tick">
+			<div class="promotions">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--main-orange" src="assets/promotions/marcas-con-promocion.webp" alt="promo-image" />
-					<span class="promotion__text hover-effect-tick__element">Promo marcas</span>
+					<span class="promotion-element__text hover-effect-tick__element">Promo marcas</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--purple" src="assets/promotions/alimentacion.webp" alt="nutrition-image" />
-					<span class="promotion__text hover-effect-tick__element">Alimentación</span>
+					<span class="promotion-element__text hover-effect-tick__element">Alimentación</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--alt-orange" src="assets/promotions/alta-cocina.webp" alt="gourmet-image" />
-					<span class="promotion__text hover-effect-tick__element">Alta cocina</span>
+					<span class="promotion-element__text hover-effect-tick__element">Alta cocina</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--pink" src="assets/promotions/poke.webp" alt="poke-image" />
-					<span class="promotion__text hover-effect-tick__element">Poké</span>
+					<span class="promotion-element__text hover-effect-tick__element">Poké</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--palid-orange" src="assets/promotions/sushi.webp" alt="sushi-image" />
-					<span class="promotion__text hover-effect-tick__element">Sushi</span>
+					<span class="promotion-element__text hover-effect-tick__element">Sushi</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--palid-purple" src="assets/promotions/japonesa.webp" alt="sushi-image" />
-					<span class="promotion__text hover-effect-tick__element">Japonesa</span>
+					<span class="promotion-element__text hover-effect-tick__element">Japonesa</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--cream" src="assets/promotions/mexicana.png" alt="mexican-image" />
-					<span class="promotion__text hover-effect-tick__element">Mexicana</span>
+					<span class="promotion-element__text hover-effect-tick__element">Mexicana</span>
 				</div>
-				<div class="promotion__element hover-effect--tick">
+				<div class="promotion-element hover-effect-tick">
 					<img class="bg--yellow" src="assets/promotions/sin-gluten.webp" alt="gluten-free-image" />
-					<span class="promotion__text hover-effect-tick__element">Sin gluten</span>
+					<span class="promotion-element__text hover-effect-tick__element">Sin gluten</span>
 				</div>
 			</div>
-			<div class="address__container">
+			<div class="address">
 				<img src="assets/icons/map-icon.svg" alt="address-icon" class="address__icon" />
-				<div class="address-text__container">
-					<span class="address">Calle Prueba, 35019, Las Palmas de Gran Canaria</span></span>
-					<a href="" class="address__href">cambiar dirección</a>
+				<div class="address-text">
+					<span>Calle Prueba, 35019, Las Palmas de Gran Canaria</span>
+					<a href="">cambiar dirección</a>
 				</div>
 			</div>
-			<div class="restaurants__container">
-				<span class="restaurants-open__container">
+			<div class="restaurants">
+				<span class="restaurants-open">
 					<img src="assets/icons/info.svg" alt="info-icon" />
 					<span class="restaurants-open__text"> 193 restaurantes abiertos </span>
 				</span>
-				<div class="restaurant__element hover-effect--pointer">
+				<div class="restaurant-element hover-effect--pointer">
 					<div
-						class="restaurant__img-container"
+						class="restaurant-img"
 						style="background-image: url('assets/restaurants/sushi_ichiban/background.webp')"
 					>
 						<img
@@ -90,16 +93,16 @@
 							class="restaurant__logo"
 						/>
 					</div>
-					<section class="restaurant__info-container">
-						<h1 class="restaurant__title">Sushi Ichiban</h1>
-						<div class="restaurant__details">
-							<div class="restaurant-score__container">
+					<section class="restaurant-info">
+						<h1 class="restaurant-info__title">Sushi Ichiban</h1>
+						<div class="restaurant-info__details">
+							<div class="restaurant-score">
 								<img src="assets/icons/star.svg" alt="start-icon" />
-								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span><span class="text--bold">5.50</span>/6</span>
 								<span>(191)</span>
 								<span>Japonesa · Sushi</span>
 							</div>
-							<div class="restaurant-deliver__container">
+							<div class="restaurant-deliver">
 								<span class="text--green text--bold">35 - 50 min.</span>
 								<span>Entrega GRATIS</span>
 								<span>Pedido mínimo 12€</span>
@@ -107,9 +110,9 @@
 						</div>
 					</section>
 				</div>
-				<div class="restaurant__element hover-effect--pointer">
+				<div class="restaurant-element hover-effect--pointer">
 					<div
-						class="restaurant__img-container"
+						class="restaurant-img"
 						style="background-image: url('assets/restaurants/oh_que_bueno/background.jpg')"
 					>
 						<img
@@ -118,16 +121,16 @@
 							class="restaurant__logo"
 						/>
 					</div>
-					<section class="restaurant__info-container">
-						<h1 class="restaurant__title">Oh! Qué bueno</h1>
-						<div class="restaurant__details">
-							<div class="restaurant-score__container">
+					<section class="restaurant-info">
+						<h1 class="restaurant-info__title">Oh! Qué bueno</h1>
+						<div class="restaurant-info__details">
+							<div class="restaurant-score">
 								<img src="assets/icons/star.svg" alt="start-icon" />
-								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span><span class="text--bold">5.50</span>/6</span>
 								<span>(371)</span>
-								<span>Hamburguesas · Venezolana</span>
+								<span>Hamburguesas</span>
 							</div>
-							<div class="restaurant-deliver__container">
+							<div class="restaurant-deliver">
 								<span class="text--green text--bold">40 - 55 min.</span>
 								<span>Entrega desde 2.65€</span>
 								<span>Sin pedido mínimo</span>
@@ -135,23 +138,23 @@
 						</div>
 					</section>
 				</div>
-				<div class="restaurant__element hover-effect--pointer">
+				<div class="restaurant-element hover-effect--pointer">
 					<div
-						class="restaurant__img-container"
+						class="restaurant-img"
 						style="background-image: url('assets/restaurants/coki/background.webp')"
 					>
 						<img src="assets/restaurants/coki/logo.gif" alt="coki-logo" class="restaurant__logo" />
 					</div>
-					<section class="restaurant__info-container">
-						<h1 class="restaurant__title">Cokí Mesa y López</h1>
-						<div class="restaurant__details">
-							<div class="restaurant-score__container">
+					<section class="restaurant-info">
+						<h1 class="restaurant-info__title">Cokí Mesa y López</h1>
+						<div class="restaurant-info__details">
+							<div class="restaurant-score">
 								<img src="assets/icons/star.svg" alt="start-icon" />
-								<span class="restaurant-score__score"><span class="text--bold">5.30</span>/6</span>
+								<span><span class="text--bold">5.30</span>/6</span>
 								<span>(131)</span>
 								<span>Sana · Sin gluten</span>
 							</div>
-							<div class="restaurant-deliver__container">
+							<div class="restaurant-deliver">
 								<span class="text--green text--bold">35 - 50 min.</span>
 								<span>Entrega GRATIS</span>
 								<span>Sin pedido mínimo</span>
@@ -159,23 +162,23 @@
 						</div>
 					</section>
 				</div>
-				<div class="restaurant__element hover-effect--pointer">
+				<div class="restaurant-element hover-effect--pointer">
 					<div
-						class="restaurant__img-container"
+						class="restaurant-img"
 						style="background-image: url('assets/restaurants/subway/background.jpg')"
 					>
 						<img src="assets/restaurants/subway/logo.gif" alt="subway-logo" class="restaurant__logo" />
 					</div>
-					<section class="restaurant__info-container">
-						<h1 class="restaurant__title">Subway</h1>
-						<div class="restaurant__details">
-							<div class="restaurant-score__container">
+					<section class="restaurant-info">
+						<h1 class="restaurant-info__title">Subway</h1>
+						<div class="restaurant-info__details">
+							<div class="restaurant-score">
 								<img src="assets/icons/star.svg" alt="start-icon" />
-								<span class="restaurant-score__score"><span class="text--bold">5.50</span>/6</span>
+								<span><span class="text--bold">5.50</span>/6</span>
 								<span>(191)</span>
 								<span>Americana · Sandwiches</span>
 							</div>
-							<div class="restaurant-deliver__container">
+							<div class="restaurant-deliver">
 								<span class="text--green text--bold">35 - 50 min.</span>
 								<span>Entrega GRATIS</span>
 								<span>Sin pedido mínimo</span>
@@ -184,53 +187,53 @@
 					</section>
 				</div>
 			</div>
-			<div class="categories__container mobile-hidden">
-				<span class="category-head__container">
+			<div class="categories mobile-hidden">
+				<span class="category-head">
 					<img src="assets/icons/category-hexagon.svg" alt="category-icon" />
 					<h3>Categorías A-Z</h3>
 				</span>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Africana</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Africana</span>
 					<span>1</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Alimentación</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Alimentación</span>
 					<span>3</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Alta cocina</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Alta cocina</span>
 					<span>5</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Americana</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Americana</span>
 					<span>45</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Andaluza</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Andaluza</span>
 					<span>1</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Árabe</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Árabe</span>
 					<span>3</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Argentina</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Argentina</span>
 					<span>8</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">BBQ</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">BBQ</span>
 					<span>2</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Bocadillos/Wraps</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Bocadillos/Wraps</span>
 					<span>8</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">Casera</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">Casera</span>
 					<span>29</span>
 				</div>
-				<div class="category__element shadow hover-effect--tick">
-					<span class="category-element__text hover-effect-tick__element">China</span>
+				<div class="category shadow hover-effect-tick">
+					<span class="hover-effect-tick__element">China</span>
 					<span>12</span>
 				</div>
 			</div>

@@ -6,7 +6,7 @@
 	cursor: pointer;
 }
 
-.hover-effect--tick:hover {
+.hover-effect-tick:hover {
 	cursor: pointer;
 }
 
@@ -15,14 +15,14 @@
 	align-items: center;
 }
 
-.hover-effect--tick > .hover-effect-tick__element::before {
+.hover-effect-tick > .hover-effect-tick__element::before {
 	content: '';
 	opacity: 0;
 	width: 0;
 	transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, margin-right 0.2s ease-in-out;
 }
 
-.hover-effect--tick:hover > .hover-effect-tick__element::before {
+.hover-effect-tick:hover > .hover-effect-tick__element::before {
 	content: '';
 	background-image: url('/src/assets/icons/check-category-icon.svg');
 	background-size: 100% 100%;
