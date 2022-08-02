@@ -272,7 +272,7 @@ body {
 			'promotions promotions'
 			'address searchbar'
 			'categories restaurants';
-		grid-auto-columns: 1fr 2fr;
+		grid-template-columns: 1fr 2fr;
 		grid-auto-rows: minmax(min-content, max-content);
 		gap: 20px;
 		column-gap: 60px;
