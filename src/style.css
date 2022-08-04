@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('/src/styles/variables.css');
-@import url('/src/styles/utilities.css');
-@import url('/src/styles/effects.css');
 
 /*
 	Page designed following a mobile first approach 
@@ -371,7 +368,7 @@ body {
 
 	.restaurant-deliver > span:first-of-type::before {
 		content: '';
-		background: url('/src/assets/icons/clock-icon.svg');
+		background: url('assets/icons/clock-icon.svg');
 		background-size: 100% 100%;
 		display: inline-block;
 		height: 20px;
